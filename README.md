@@ -70,6 +70,7 @@ Após instalar o programa, você precisará executá-lo manualmente. O bot entã
 ## Problemas Conhecidos ⚠️
 
 - A coleta de dados pode falhar se o site alvo estiver fora do ar ou se houver mudanças significativas na estrutura da página.
+- Se o programa for instalado em um diretório protegido, como `C:\Program Files`, pode haver problemas na criação de arquivos, devido à falta de permissões adequadas. Para resolver, execute o programa como administrador.
 
 ## Licença 📝
 
