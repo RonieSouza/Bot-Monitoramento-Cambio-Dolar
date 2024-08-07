@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto 📋
 
-Este projeto é um bot em Python criado para monitorar a cotação do dólar (USD) em relação ao Real Brasileiro (BRL) em um site de câmbio. O bot automatiza a coleta do valor da cotação, registra a data e a hora, salva o URL da página e faz uma captura de tela da cotação. Todos esses dados são organizados em um relatório, que é gerado em formato PDF.
+Este projeto é um bot em Python criado para monitorar a cotação do dólar (USD) em relação ao Real Brasileiro (BRL) no site [Google Finance](https://www.google.com/finance/quote/USD-BRL). O bot automatiza a coleta do valor da cotação, registra a data e a hora, salva o URL da página e faz uma captura de tela da cotação. Todos esses dados são organizados em um relatório, que é gerado em formato PDF.
 
 ## Funcionalidades ⚙️
 
@@ -21,22 +21,51 @@ Este projeto é um bot em Python criado para monitorar a cotação do dólar (US
 4. **Entrega como Executável:**
    - O projeto inclui um instalador para facilitar a distribuição e uso do programa.
 
-## Configuração do Ambiente 🔧
+## Configuração para Usuários 🔧
+
+### Requisitos
+
+- O instalador incluirá todas as dependências necessárias.
+
+### Instruções para Execução ▶️
+
+1. Faça o download do instalador `mysetup.exe` disponível no repositório.
+2. Execute o instalador para instalar o programa em seu sistema.
+3. Após a instalação, abra o programa para iniciar a execução.
+
+## Configuração para Desenvolvedores 🔧
 
 ### Requisitos
 
 - Python 3.x 🐍
 - Bibliotecas: `selenium`, `docx`, `docx2pdf`, `pytz`, `os`, `datetime`
 
-### Instruções para Execução ▶️
+### Instalação das Dependências
 
-1. Faça o download do instalador disponível no repositório.
-2. Execute o instalador para instalar o programa em seu sistema.
-3. Após a instalação, abra o programa para iniciar a execução automática.
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/RonieSouza/Bot-Monitoramento-Cambio-Dolar.git
+   cd Bot-Monitoramento-Cambio-Dolar
+   ```
+   
+2. Configure um ambiente virtual (opcional, mas recomendado):
+
+   ```bash
+   python -m venv venv
+   # No Linux use `source venv/bin/activate`
+   # No Windows use `venv\Scripts\activate`
+   ```
+
+3. Instale as dependências usando o arquivo requirements.txt:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Exemplo de Uso 💡
 
-Após instalar o programa, você precisará executá-lo manualmente. O bot então começará a coletar e registrar as cotações. O relatório gerado em PDF estará disponível com as informações atualizadas.
+Após instalar o programa, você precisará executá-lo manualmente. O bot então começará a coletar e registrar os dados. O relatório gerado em PDF estará disponível com as informações atualizadas.
 
 ## Problemas Conhecidos ⚠️
 
