@@ -117,6 +117,8 @@ def main():
     print("\033[33m\033[1mIniciando o processo de coleta de dados...\033[0m")
 
     driver = None
+    erro_ocorrido = False
+
     try:
         driver, wait = DriverConfig.configurar_driver()
         driver.get(Config.URL)
@@ -134,14 +136,24 @@ def main():
         )
         report_generator.criar_documento()
 
+    except RuntimeError as e:
+        if "No such file or directory" in str(e):
+            print("\033[31m\033[1mErro ao criar o documento. Por favor, execute o programa como administrador, pois o diretório onde o programa está instalado pode estar protegido.\033[0m")
+        else:
+            print(f"Erro durante a execução do programa: {e}")
+        erro_ocorrido = True
+
     except Exception as e:
         print(f"Erro durante a execução do programa: {e}")
+        erro_ocorrido = True
 
     finally:
         if driver:
             driver.quit()
 
-    print(f"\033[32m\033[1mProcesso finalizado com sucesso. Arquivo -> {Config.CAMINHO_PDF}\033[0m")
+    if not erro_ocorrido:
+        print(f"\033[32m\033[1mProcesso finalizado com sucesso. Arquivo -> {Config.CAMINHO_PDF}\033[0m")
+
     input('Aperte a tecla Enter para fechar')
 
 if __name__ == "__main__":
