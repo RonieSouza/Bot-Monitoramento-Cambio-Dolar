@@ -1,0 +1,7 @@
+# Diretórios e arquivos do ambiente virtual
+venv/
+env/
+ENV/
+
+# Arquivos de compilação
+build/
