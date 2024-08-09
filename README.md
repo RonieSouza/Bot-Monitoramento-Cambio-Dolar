@@ -71,13 +71,8 @@ Após instalar o programa, você precisará executá-lo manualmente. O bot entã
 
 - **Falhas na Coleta de Dados:** A coleta de dados pode falhar se o site alvo estiver fora do ar ou se houver mudanças significativas na estrutura da página.
 - **Problemas de Permissão:** Se o programa for instalado em um diretório protegido, como `C:\Program Files`, pode haver problemas na criação de arquivos devido à falta de permissões adequadas. Para resolver, execute o programa como administrador.
-- **Erro de Conversão para PDF:** Se o Microsoft Office não estiver instalado, a conversão do arquivo Word para PDF pode falhar. O arquivo Word será criado normalmente, mas a conversão pode não funcionar. Se isso acontecer, você pode:
-  - **Converter Manualmente:** Utilize serviços de conversão online ou outras ferramentas de software para transformar o arquivo `.docx` em `.pdf`.
-  - **Usar a Linha de Comando:** Ferramentas como `pandoc` permitem conversões simples. Exemplo:
+- **Erro de Conversão para PDF:** Se o Microsoft Office não estiver instalado, a conversão do arquivo Word para PDF pode falhar. Embora o arquivo Word seja criado normalmente, a conversão para PDF pode não funcionar. Se isso ocorrer, você pode **converter manualmente** o arquivo utilizando serviços de conversão online ou outras ferramentas de software para transformar o arquivo `.docx` em `.pdf`.
 
-    ```bash
-    pandoc arquivo.docx -o arquivo.pdf
-    ```
     
 ## Licença 📝
 
